@@ -157,8 +157,7 @@ function StudentManagementView() {
           />
           <input
             name="age"
-            min="1"
-            type="number"
+            type="text"
             placeholder="Age"
             value={form.age}
             onChange={updateForm}
@@ -247,9 +246,9 @@ function StudentManagementView() {
             </tbody>
           </table>
         </div>
-        <strong style={{ marginTop: "20px" }}>
-          Total shown: {visibleStudents.length}
-        </strong>
+        <div style={{ marginTop: "20px", fontSize: "30px" }}>
+          <strong>Total shown: {visibleStudents.length}</strong>
+        </div>
       </section>
     </main>
   );
